@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nikhil's Cricket Equipment Store</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #eef6fa;
+      margin: 0;
+      color: #222;
+    }
+    header {
+      background: #00897b;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    nav {
+      background: #00695c;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      background: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      padding: 30px;
+      border-radius: 12px;
+    }
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 28px;
+      justify-content: center;
+    }
+    .product {
+      background: #f7fafc;
+      border-radius: 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+      padding: 22px;
+      text-align: center;
+      width: 225px;
+    }
+    .product img {
+      width: 180px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .product h3 {
+      margin: 14px 0 7px 0;
+      color: #0277bd;
+    }
+    .product p {
+      margin: 5px 0;
+      color: #388e3c;
+      font-weight: bold;
+    }
+    .help-section {
+      margin-top: 35px;
+      background: #e0f2f1;
+      padding: 18px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nikhil's Cricket Equipment Store</h1>
+    <p>Your one-stop shop for quality cricket gear!</p>
+  </header>
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#help">Help</a>
+    <a href="#prices">Prices</a>
+  </nav>
+  <div class="container">
+    <section id="menu">
+      <h2>Our Cricket Equipment</h2>
+      <div class="product-grid">
+        <div class="product">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Cricket_bat_20110528.jpg" alt="Cricket Bat">
+          <h3>Cricket Bat</h3>
+          <p>₹3500</p>
+        </div>
+        <div class="product">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Cricket_ball_red.jpg" alt="Cricket Ball">
+          <h3>Cricket Ball</h3>
+          <p>₹450</p>
+        </div>
+        <div class="product">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Cricket_pads.jpg" alt="Batting Pads">
+          <h3>Batting Pads</h3>
+          <p>₹1200</p>
+        </div>
+        <div class="product">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/Cricket_helmet.JPG" alt="Helmet">
+          <h3>Helmet</h3>
+          <p>₹1800</p>
+        </div>
+        <div class="product">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Cricket_gloves.jpg" alt="Batting Gloves">
+          <h3>Batting Gloves</h3>
+          <p>₹900</p>
+        </div>
+      </div>
+    </section>
+    <section id="help" class="help-section">
+      <h2>Need Help?</h2>
+      <p>
+        Contact us at <b>support@cricketnikhil.com</b> or call <b>+91 9876543210</b>.
+        <br>
+        We’re happy to assist with product selection, bulk orders, and shipping info!
+      </p>
+    </section>
+    <section id="prices">
+      <h2>Equipment Prices</h2>
+      <ul>
+        <li>Cricket Bat: ₹3500</li>
+        <li>Cricket Ball: ₹450</li>
+        <li>Batting Pads: ₹1200</li>
+        <li>Helmet: ₹1800</li>
+        <li>Batting Gloves: ₹900</li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>
