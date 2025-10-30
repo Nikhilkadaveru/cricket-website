@@ -137,18 +137,21 @@
       </ul>
     </section>
   </div>
-  <script>
+<button onclick="addContact()">Add Contact</button>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script>
   const SUPABASE_URL = "https://dlephyiugorasnntgmgp.supabase.co";
   const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRsZXBoeWl1Z29yYXNubnRnbWdwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE3OTgxNTUsImV4cCI6MjA3NzM3NDE1NX0.rxm8VkqmFjW53vn99m5oHJPAsVuJN8k3B2lHwk9w-9Y";
   const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
-  // Example: Add a record when someone visits
-  supabase
-    .from('visitors')
-    .insert([{ timestamp: new Date().toISOString() }])
-    .then(response => {
-       console.log("Visitor tracked!", response);
-    });
+  function addContact() {
+    supabase
+      .from('Contacts')
+      .insert([{ name: "Test", email: "test@email.com", timestamp: new Date().toISOString() }])
+      .then(data => { console.log(data); });
+  }
 </script>
+
+
 </body>
 </html>
