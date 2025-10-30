@@ -149,7 +149,9 @@
     supabase
       .from('Contacts')
       .insert([{ name: "Test", email: "test@email.com", timestamp: new Date().toISOString() }])
-      .then(data => { console.log(data); });
+      .then(data => { console.log(data);
+        alert(JSON.stringify(data))
+       });
   }
 </script>
 
